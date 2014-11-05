@@ -8,6 +8,7 @@ public class RandomSpawner : MonoBehaviour {
 	public float yRange = 1.0f;
 	public float minSpawnTime = 1.0f;
 	public float maxSpawnTime = 10.0f;
+	public int counter = 0;
 	
 	// Use this for initialization
 	void Start () {
@@ -20,5 +21,25 @@ public class RandomSpawner : MonoBehaviour {
 		int spawnObjectIndex = Random.Range (0, spawnObject.Length);
 		Instantiate(spawnObject[spawnObjectIndex],transform.position + new Vector3(xOffset,yOffset,0.0f), spawnObject[spawnObjectIndex].transform.rotation);
 		Invoke ("SpawnWall", Random.Range(minSpawnTime, maxSpawnTime));
+	}
+
+	void Update (){
+		if (SpeedManager.Instance.currentSpeed >= 100 &&
+		    SpeedManager.Instance.currentSpeed < 150) {
+			minSpawnTime = 1.5f;
+			maxSpawnTime = 2.5f;
+		}else		if (SpeedManager.Instance.currentSpeed >= 150 &&
+		           SpeedManager.Instance.currentSpeed < 200) {
+			minSpawnTime = 1.25f;
+			maxSpawnTime = 2.25f;
+		}else		if (SpeedManager.Instance.currentSpeed >= 200 &&
+		           SpeedManager.Instance.currentSpeed < 250) {
+			minSpawnTime = 1f;
+			maxSpawnTime = 2f;
+		}else		if (SpeedManager.Instance.currentSpeed >= 250) {
+			minSpawnTime = 0.5f;
+			maxSpawnTime = 1f;
+		}
+
 	}
 }
