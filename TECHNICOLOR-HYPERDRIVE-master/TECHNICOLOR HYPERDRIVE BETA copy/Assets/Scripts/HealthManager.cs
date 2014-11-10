@@ -34,6 +34,7 @@ public class HealthManager : MonoBehaviour {
 	//public ParticleSystem hurtParticle;
 	
 	public bool isDead = false;
+	public bool isHit = false;
 
 	// Use this for initialization
 	void Start () {
@@ -54,6 +55,8 @@ public class HealthManager : MonoBehaviour {
 		currentHealth -= damageAmount;
 		healthDisplay.localScale = new Vector3 (healthDisplay.localScale.x, healthOriginalYScale * (currentHealth / maxHealth), healthDisplay.localScale.x);
 		healthDisplay.GetComponentInChildren<Renderer>().material.color = Color.Lerp (minHealthColor, maxHealthColor, currentHealth);
+
+		isHit = true;
 		//hurtParticle.isPlaying = true;
 		if (currentHealth < 0.0f) {
 			//Instantiate (gib,transform.position,Random.rotation);
@@ -97,6 +100,8 @@ public class HealthManager : MonoBehaviour {
 			Application.LoadLevel("gameOverScene");
 			DestroyAllGameObjects();
 		}
+
+		isHit = false;
 
 		//DISPLAY TEST
 		/*if (Input.GetButtonDown ("Fire1"))

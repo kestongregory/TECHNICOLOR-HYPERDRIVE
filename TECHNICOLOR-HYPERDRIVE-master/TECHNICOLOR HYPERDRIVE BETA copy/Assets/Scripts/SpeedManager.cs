@@ -24,7 +24,7 @@ public class SpeedManager : MonoBehaviour {
 	public Transform healthDisplay;
 	public float maxSpeed = 250.0f;
 	public float minSpeed = 25.0f;
-	public float currentSpeed;
+	public float currentSpeed = 25.0f;
 
 	// Use this for initialization
 	void Start () {

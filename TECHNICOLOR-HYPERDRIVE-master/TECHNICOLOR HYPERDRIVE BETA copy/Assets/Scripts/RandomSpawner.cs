@@ -9,7 +9,9 @@ public class RandomSpawner : MonoBehaviour {
 	public float minSpawnTime = 1.0f;
 	public float maxSpawnTime = 10.0f;
 	public int counter = 0;
-	
+
+	public bool Hardcore = false;
+
 	// Use this for initialization
 	void Start () {
 		Invoke ("SpawnWall", Random.Range(minSpawnTime, maxSpawnTime));
@@ -41,5 +43,9 @@ public class RandomSpawner : MonoBehaviour {
 			maxSpawnTime = 1f;
 		}
 
+		if (Hardcore == true) {
+			minSpawnTime = 0.1f;
+			maxSpawnTime = 0.1f;
+		}
 	}
 }

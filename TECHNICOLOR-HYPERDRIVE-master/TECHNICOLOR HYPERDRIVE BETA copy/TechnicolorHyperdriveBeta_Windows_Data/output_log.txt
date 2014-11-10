@@ -1,19 +1,16 @@
 Initialize engine version: 4.5.4f1 (e036f44c54c9)
 GfxDevice: creating device client; threaded=1
-d3d11: failed to create D3D11 device (0x887a0004)
-GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 9.0c [igdumd32.dll 8.14.10.1930]
-    Renderer: Mobile Intel(R) 945 Express Chipset Family
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics Family (ID=0x116)
     Vendor:   Intel
-    VRAM:     64 MB (via DXGI)
-    Caps:     Shader=20 DepthRT=0 NativeDepth=0 NativeShadow=0 DF16=0 INTZ=0 RAWZ=0 NULL=0 RESZ=0 SlowINTZ=0
+    VRAM:     64 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Dennis\Desktop\TECHNICOLOR-HYPERDRIVE-master\TECHNICOLOR HYPERDRIVE BETA copy\TechnicolorHyperdriveBeta_Windows_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Dennis\Desktop\TECHNICOLOR-HYPERDRIVE-master\TECHNICOLOR HYPERDRIVE BETA copy\TechnicolorHyperdriveBeta_Windows_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Dennis\Desktop\TECHNICOLOR-HYPERDRIVE-master\TECHNICOLOR HYPERDRIVE BETA copy\TechnicolorHyperdriveBeta_Windows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Dennis\Desktop\TECHNICOLOR-HYPERDRIVE-master\TECHNICOLOR HYPERDRIVE BETA copy\TechnicolorHyperdriveBeta_Windows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.131 seconds
-desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
+Platform assembly: C:\Users\Leo\Desktop\TECHNICOLOR-HYPERDRIVE-master\TECHNICOLOR HYPERDRIVE BETA copy\TechnicolorHyperdriveBeta_Windows_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Leo\Desktop\TECHNICOLOR-HYPERDRIVE-master\TECHNICOLOR HYPERDRIVE BETA copy\TechnicolorHyperdriveBeta_Windows_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Leo\Desktop\TECHNICOLOR-HYPERDRIVE-master\TECHNICOLOR HYPERDRIVE BETA copy\TechnicolorHyperdriveBeta_Windows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Leo\Desktop\TECHNICOLOR-HYPERDRIVE-master\TECHNICOLOR HYPERDRIVE BETA copy\TechnicolorHyperdriveBeta_Windows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.159 seconds
+desktop: 1366x768 60Hz; virtual: 2806x900 at -1440,0
 <RI> Initializing input.
 <RI> Input initialized.

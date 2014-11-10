@@ -80,8 +80,10 @@
      <Compile Include="Assets\Scripts\ScaleOverTime.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\ScrollTexture.cs" />
+     <Compile Include="Assets\Scripts\ShakeOnTrigger.cs" />
      <Compile Include="Assets\Scripts\ShipMovement.cs" />
      <Compile Include="Assets\Scripts\ShootForward.cs" />
+     <Compile Include="Assets\Scripts\SoundOnTrigger.cs" />
      <Compile Include="Assets\Scripts\SpasmOnTrigger.cs" />
      <Compile Include="Assets\Scripts\SpeedDownPlayerOnTrigger.cs" />
      <Compile Include="Assets\Scripts\SpeedManager.cs" />

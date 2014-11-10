@@ -24,9 +24,9 @@ public class RandomEnemySpawner : MonoBehaviour {
 	}
 
 	void Update (){
-		if (minSpawnTime <= .5f) {
-			minSpawnTime = .5f;
-			maxSpawnTime = .5f;
+		if (minSpawnTime <= .3f) {
+			minSpawnTime = 1f;
+			maxSpawnTime = 1f;
 		} else{
 			if (ScoreManager.Instance.score2 % 50 == 0 && 
 			    ScoreManager.Instance.currentMultiply == 1 /*&& ScoreManager.Instance.score2 != 0*/) {
