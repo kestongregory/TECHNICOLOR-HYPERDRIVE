@@ -7,6 +7,7 @@ public class SpeedUpPlayerOnTrigger : MonoBehaviour {
 	public float coolDownTime = 1.0f;
 
 	private bool inCoolDown = false;
+	private bool showSpeedIndicatorGui = false;
 
 	void OnTriggerEnter(){
 		if (!inCoolDown) {
@@ -14,6 +15,30 @@ public class SpeedUpPlayerOnTrigger : MonoBehaviour {
 			//MoveForward.speed+=MoveForward.speedBoost;
 			inCoolDown = true;
 			Invoke ("Uncool", coolDownTime);
+		}
+	}
+
+	void OnGUI()
+	{
+		if (!inCoolDown)
+		{
+			showSpeedIndicatorGui = true;
+		}
+
+		else 
+		{
+			showSpeedIndicatorGui = false;
+		}
+
+		if (showSpeedIndicatorGui == true)			
+		{		
+			Debug.Log("ITS TRUE CAPTAIN");
+			GUI.Box(new Rect(100,100,Screen.width /2, Screen.height / 2), "SPEED UP");
+		}
+
+		else if (showSpeedIndicatorGui == false)
+		{
+			//Debug.Log("ITS FALSE CAPTAIN");
 		}
 	}
 
