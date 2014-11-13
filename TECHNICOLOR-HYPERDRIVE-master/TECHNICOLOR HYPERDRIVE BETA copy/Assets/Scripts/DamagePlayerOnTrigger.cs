@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(AudioSource))]
+//[RequireComponent(typeof(AudioSource))]
 public class DamagePlayerOnTrigger : MonoBehaviour {
 
 	public float damageAmount = 1.0f;

@@ -11,6 +11,8 @@ public class ScoreManager : MonoBehaviour {
 	public delegate void LevelChangedEvent(int newlevel);
 	public event LevelChangedEvent LevelChanged;
 
+
+
 	
 	void OnGUI(){
 		GUILayout.Label ("Score: " + score + " X " + currentMultiply);
@@ -49,7 +51,7 @@ public class ScoreManager : MonoBehaviour {
 			return;
 		}
 		currentMultiply += upAmount;
-		
+
 		if (currentMultiply > maxMultiply) {
 			currentMultiply = maxMultiply;
 			

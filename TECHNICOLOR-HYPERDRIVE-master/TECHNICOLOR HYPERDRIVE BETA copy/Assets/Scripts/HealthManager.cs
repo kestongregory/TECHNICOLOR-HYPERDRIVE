@@ -36,6 +36,9 @@ public class HealthManager : MonoBehaviour {
 	public bool isDead = false;
 	public bool isHit = false;
 
+	public AudioClip damage;
+	public AudioClip heal;
+
 	// Use this for initialization
 	void Start () {
 		currentHealth = maxHealth;
@@ -55,6 +58,7 @@ public class HealthManager : MonoBehaviour {
 		currentHealth -= damageAmount;
 		healthDisplay.localScale = new Vector3 (healthDisplay.localScale.x, healthOriginalYScale * (currentHealth / maxHealth), healthDisplay.localScale.x);
 		healthDisplay.GetComponentInChildren<Renderer>().material.color = Color.Lerp (minHealthColor, maxHealthColor, currentHealth);
+		audio.PlayOneShot(damage, 1);
 
 		isHit = true;
 		//hurtParticle.isPlaying = true;
@@ -77,6 +81,7 @@ public class HealthManager : MonoBehaviour {
 		currentHealth += healAmount;
 		healthDisplay.localScale = new Vector3 (healthDisplay.localScale.x, healthOriginalYScale * (currentHealth / maxHealth), healthDisplay.localScale.x);
 		//healthDisplay.GetComponentInChildren<Renderer>().material.color = Color.Lerp (minHealthColor, maxHealthColor, currentHealth / maxHealth);
+		audio.PlayOneShot(heal, 1);
 
 		if (currentHealth > maxHealth) {
 			currentHealth = maxHealth;

@@ -34,16 +34,16 @@ public class RandomEnemySpawner : MonoBehaviour {
 				maxSpawnTime *= .999f;
 			}else if (ScoreManager.Instance.currentMultiply == 10 ||
 			          ScoreManager.Instance.currentMultiply == 10/*&& ScoreManager.Instance.score2 != 0*/) {
-				minSpawnTime *= .99f;
-				maxSpawnTime *= .99f;
+				minSpawnTime *= .999f;
+				maxSpawnTime *= .999f;
 			}else if (ScoreManager.Instance.currentMultiply == 3 ||
 			 		   ScoreManager.Instance.currentMultiply == 7 ||
 			 		   ScoreManager.Instance.currentMultiply == 9/*&& ScoreManager.Instance.score2 != 0*/) {
 				minSpawnTime *= .9999f;
 				maxSpawnTime *= .9999f;
 				if(ScoreManager.Instance.score2 % 5 == 0){
-					minSpawnTime *= .99f;
-					maxSpawnTime *= .99f;
+					minSpawnTime *= .999f;
+					maxSpawnTime *= .999f;
 				}
 			}else if(ScoreManager.Instance.currentMultiply == 2 ||
 			         ScoreManager.Instance.currentMultiply == 4||
@@ -52,8 +52,8 @@ public class RandomEnemySpawner : MonoBehaviour {
 				minSpawnTime *= .9999f;
 				maxSpawnTime *= .9999f;
 				if(ScoreManager.Instance.score2 % 6 == 0){
-					minSpawnTime *= .99f;
-					maxSpawnTime *= .99f;
+					minSpawnTime *= .999f;
+					maxSpawnTime *= .999f;
 				}
 			}
 		}

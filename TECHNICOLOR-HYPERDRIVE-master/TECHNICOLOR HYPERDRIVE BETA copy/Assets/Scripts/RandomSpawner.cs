@@ -28,18 +28,18 @@ public class RandomSpawner : MonoBehaviour {
 	void Update (){
 		if (SpeedManager.Instance.currentSpeed >= 100 &&
 		    SpeedManager.Instance.currentSpeed < 150) {
-			minSpawnTime = 1.5f;
-			maxSpawnTime = 2.5f;
+			minSpawnTime = 2.5f;
+			maxSpawnTime = 3.5f;
 		}else		if (SpeedManager.Instance.currentSpeed >= 150 &&
 		           SpeedManager.Instance.currentSpeed < 200) {
-			minSpawnTime = 1.25f;
-			maxSpawnTime = 2.25f;
+			minSpawnTime = 1.5f;
+			maxSpawnTime = 2.5f;
 		}else		if (SpeedManager.Instance.currentSpeed >= 200 &&
 		           SpeedManager.Instance.currentSpeed < 250) {
 			minSpawnTime = 1f;
-			maxSpawnTime = 2f;
+			maxSpawnTime = 1.5f;
 		}else		if (SpeedManager.Instance.currentSpeed >= 250) {
-			minSpawnTime = 0.5f;
+			minSpawnTime = .5f;
 			maxSpawnTime = 1f;
 		}
 

@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\RandomHealthSpawner.cs" />
      <Compile Include="Assets\Scripts\RandomSpawner.cs" />
      <Compile Include="Assets\Scripts\RandomSpecialSpawner.cs" />
+     <Compile Include="Assets\Scripts\RandomSpeedSpawner.cs" />
      <Compile Include="Assets\Scripts\RingCountManager.cs" />
      <Compile Include="Assets\Scripts\Rotate.cs" />
      <Compile Include="Assets\Scripts\RotateTower.cs" />

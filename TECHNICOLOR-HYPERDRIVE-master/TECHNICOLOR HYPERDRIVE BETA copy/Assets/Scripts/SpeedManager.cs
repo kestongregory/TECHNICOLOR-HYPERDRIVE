@@ -26,6 +26,8 @@ public class SpeedManager : MonoBehaviour {
 	public float minSpeed = 25.0f;
 	public float currentSpeed = 25.0f;
 
+	public AudioClip speedUpTune;
+
 	// Use this for initialization
 	void Start () {
 		currentSpeed = minSpeed;
@@ -53,6 +55,8 @@ public class SpeedManager : MonoBehaviour {
 			return;
 		}
 		currentSpeed += speedUpAmount;
+		
+		audio.PlayOneShot(speedUpTune, 1);
 		
 		if (currentSpeed > maxSpeed) {
 			currentSpeed = maxSpeed;
