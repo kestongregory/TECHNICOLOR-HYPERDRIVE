@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ScoreManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ExplosionOnTrigger.cs">
     <Files>
-      <File FileName="Assets\Scripts\ScoreManager.cs" Line="26" Column="18" />
-      <File FileName="Assets\Scripts\ShipMovement.cs" Line="99" Column="1" />
+      <File FileName="Assets\Scripts\ExplosionOnTrigger.cs" Line="6" Column="34" />
+      <File FileName="Assets\Scripts\ScoreManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ShipMovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
