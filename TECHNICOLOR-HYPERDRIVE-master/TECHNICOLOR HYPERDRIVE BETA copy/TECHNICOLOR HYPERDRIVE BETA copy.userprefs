@@ -1,18 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpeedManager.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ScoreManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\DamagePlayerOnTrigger.cs" Line="26" Column="1" />
-      <File FileName="Assets\Scripts\RandomSpawner.cs" Line="43" Column="20" />
-      <File FileName="Assets\Scripts\EnemyAI.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ScoreManager.cs" Line="53" Column="31" />
-      <File FileName="Assets\Scripts\HealthManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\changeTitleColor.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RandomEnemySpawner.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AddToScoreOnTriggerEnter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RandomSpeedSpawner.cs" Line="43" Column="21" />
-      <File FileName="Assets\Scripts\RandomSpecialSpawner.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpeedManager.cs" Line="59" Column="37" />
+      <File FileName="Assets\Scripts\ScoreManager.cs" Line="26" Column="18" />
+      <File FileName="Assets\Scripts\ShipMovement.cs" Line="99" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

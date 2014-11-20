@@ -3,29 +3,33 @@ using System.Collections;
 
 public class ScoreManager : MonoBehaviour {
 	
-	public int currentLevel = 0;
-	public int[] levelScoreThresholds;
+	//public int currentLevel = 0;
+	//public int[] levelScoreThresholds;
 	public static int score = 0;
 	public int score2 = score;
 
-	public delegate void LevelChangedEvent(int newlevel);
-	public event LevelChangedEvent LevelChanged;
+	//public delegate void LevelChangedEvent(int newlevel);
+	//public event LevelChangedEvent LevelChanged;
 
+	public GUIText scoreText;
 
 
 	
-	void OnGUI(){
+	/*void OnGUI(){
 		GUILayout.Label ("Score: " + score + " X " + currentMultiply);
-	}
+	}*/
 
 	/////////////////////////////////////////////////////////////
 	public int maxMultiply = 5;
 	public int minMultiply= 1;
 	public int currentMultiply;
+	public int startMultiply;
 	
 	// Use this for initialization
 	void Start () {
-		currentMultiply = 1;
+		score = 0;
+		score2 = score;
+		currentMultiply = startMultiply;
 		InvokeRepeating("scoreCounter", 0.01F, 0.01F);
 	}
 	
@@ -76,11 +80,11 @@ public class ScoreManager : MonoBehaviour {
 		score2 = score;
 
 		//gamestate handler
-		if(score > levelScoreThresholds[currentLevel]){
-			currentLevel += 1;
+		//if(score > levelScoreThresholds[currentLevel]){
+		//	currentLevel += 1;
 			//send notification of some kind to the other objects that care
-			LevelChanged(currentLevel);
-		}
+		//	LevelChanged(currentLevel);
+		//}
 	}
 
 	#region SingletonAndAwake
@@ -103,5 +107,7 @@ public class ScoreManager : MonoBehaviour {
 	void scoreCounter()
 	{
 		score = score + (1 * currentMultiply);
+		
+		scoreText.text = "Score: " + score  + "\nMultiplier: " + currentMultiply;
 	}
 }

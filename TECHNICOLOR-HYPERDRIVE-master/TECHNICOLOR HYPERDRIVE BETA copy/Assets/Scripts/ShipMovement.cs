@@ -11,15 +11,15 @@ public class ShipMovement : MonoBehaviour
 
 	void Start(){
 		//Register for level changed events
-		ScoreManager.Instance.LevelChanged += LevelChanged;
+//		ScoreManager.Instance.LevelChanged += LevelChanged;
 	}
 
 	void OnDestroy(){
-		ScoreManager.Instance.LevelChanged -= LevelChanged;
+//		ScoreManager.Instance.LevelChanged -= LevelChanged;
 	}
 
 	void OnDisable(){
-		ScoreManager.Instance.LevelChanged -= LevelChanged;
+//		ScoreManager.Instance.LevelChanged -= LevelChanged;
 	}
 
 	// Update is called once per frame
